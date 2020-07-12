@@ -8,11 +8,13 @@
 }
 
 #footer1 {
-    background: #9D9EAA;
+    background: #9EC7E7;
+    height: 30px;
 }
 
 #footer2 {
-    background: #5E5D63;
+    background: #5E7790;
+    height:30px;
 }
 
 .nav-link {
@@ -26,7 +28,7 @@
 .column {
     float: left;
     width: 25%;
-    padding: 5px;
+    padding: 2px;
 }
 
 /* Clearfix (clear floats) */
@@ -34,4 +36,18 @@
     content: "";
     clear: both;
     display: table;
+}
+
+#footerColor {
+    background: #5E7790;
+}
+
+a {
+    color: white;
+}
+
+#GridView1 {
+    width: 100%;
+    word-wrap: break-word;
+    table-layout: fixed;
 }
