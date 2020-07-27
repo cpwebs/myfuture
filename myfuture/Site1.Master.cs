@@ -11,12 +11,6 @@ namespace myfuture
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-            LinkButton1.Visible = true; // user login link button
-            LinkButton2.Visible = true; // sign up link button
-            LinkButton3.Visible = true; // user login link button
-            LinkButton4.Visible = true; // sign up link button
-            */
             try
             {
                 string sessionrole = Session["role"] as string;
@@ -42,7 +36,7 @@ namespace myfuture
             }
             catch(Exception ex)
             {
-
+                Console.Write(ex);
             }
         }
 

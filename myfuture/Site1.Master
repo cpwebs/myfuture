@@ -35,6 +35,13 @@
     <%--Datatables js--%>
     <script src="datatables/js/jquery.dataTables.min.js"></script>
 
+    <!-- Chartjs -->
+    <script src="Scripts/Chart.min.js"></script>
+
+    <!--Bootstrap DatePicker-->
+    <link href="Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap-datepicker.js"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -42,9 +49,10 @@
     <form id="form1" runat="server">
         
         <div style='overflow-x: hidden;'>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom:1px solid #D3D3D3">
+            <!--<nav class="navbar navbar-expand-lg navbar-light">-->
                 <a class="navbar-brand" href="homepage.aspx">
-                    <img src="imgs/profile.png"  width="90" height="20" />
+                    <img src="imgs/profile.png"  width="135" height="30" />
                 </a>
  
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,19 +63,19 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton1_Click" ID="LinkButton1" runat="server">View Goals</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton1_Click" ID="LinkButton1" Font-Size="Larger" runat="server">View Goals</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton2_Click" ID="LinkButton2" runat="server">Login</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton2_Click" ID="LinkButton2" Font-Size="Larger" runat="server">Login</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton3_Click" ID="LinkButton3" runat="server">Sign Up</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton3_Click" ID="LinkButton3" Font-Size="Larger" runat="server">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton5_Click" ID="LinkButton5" runat="server">Profile</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton5_Click" ID="LinkButton5" Font-Size="Larger" runat="server">Profile</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton4_Click" ID="LinkButton4" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton CssClass="nav-link" OnClick="LinkButton4_Click" ID="LinkButton4" Font-Size="Larger" runat="server">Logout</asp:LinkButton>
                         </li>
                     </ul>
                 </div>
@@ -107,13 +115,13 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Goals</h6>
                 <p>
-                  <a href="#!">Health</a>
+                  <a href="health.aspx">Health</a>
                 </p>
                 <p>
-                  <a href="#!">Career</a>
+                  <a href="career.aspx">Career</a>
                 </p>
                 <p>
-                  <a href="#!">Finance</a>
+                  <a href="finance.aspx">Finance</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -124,13 +132,13 @@
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
                 <p>
-                  <a href="#!">Home</a>
+                  <a href="homepage.aspx">Home</a>
                 </p>
                 <p>
-                  <a href="#!">Account</a>
+                  <a href="userprofile.aspx">Account</a>
                 </p>
                 <p>
-                  <a href="#!">View Goals</a>
+                  <a href="viewgoals.aspx">View Goals</a>
                 </p>
               </div>
 
